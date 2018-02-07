@@ -274,7 +274,8 @@ public class SelectionDialog extends android.support.v4.app.DialogFragment{
 
         String roundInput;
 
-        if(roundSpinner != null){
+        //check if spinner is instantiated and loaded a position
+        if(roundSpinner != null && roundSpinner.getSelectedItemPosition() != AdapterView.INVALID_POSITION){
 
             roundInput = Integer.toString(roundSpinner.getSelectedItemPosition() + 1) + "/";
             newAnswer += roundInput;

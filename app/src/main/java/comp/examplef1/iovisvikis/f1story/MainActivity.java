@@ -292,7 +292,7 @@ public class MainActivity extends AppCompatActivity implements Communication{
         ft.commit();
         fm.executePendingTransactions();
 
-        //TODO uncomment and change version code in the app.build before release
+        //TODO uncomment, replace app_id and banner_id strings and change version code in the app.build before release
         //MobileAds.initialize(this, getResources().getString(R.string.addMob_app_id));
 
         // Load an ad into the AdMob banner view.

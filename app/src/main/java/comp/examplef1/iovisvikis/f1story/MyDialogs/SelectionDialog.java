@@ -239,17 +239,22 @@ public class SelectionDialog extends android.support.v4.app.DialogFragment{
         checkMark.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setAnswer();
-                String answer = getAnswer();
 
-                if(purpose.contains("Standings"))
-                    getAct().onDialogPositiveClick(answer, choiceKind + purpose);
-                else
-                    getAct().onDialogPositiveClick(answer, purpose);
+                //activate the click only of the adapters are loaded on the spinners
+                if((seasonSpinner != null && seasonSpinner.getSelectedItem() != null)){
 
-                act.allowOrientationChanges();
+                    setAnswer();
+                    String answer = getAnswer();
 
-                SelectionDialog.this.dismiss();
+                    if (purpose.contains("Standings"))
+                        getAct().onDialogPositiveClick(answer, choiceKind + purpose);
+                    else
+                        getAct().onDialogPositiveClick(answer, purpose);
+
+                    act.allowOrientationChanges();
+
+                    SelectionDialog.this.dismiss();
+                }
             }
         });
 
@@ -257,6 +262,8 @@ public class SelectionDialog extends android.support.v4.app.DialogFragment{
 
 
     protected void setAnswer(){
+
+
 
         String newAnswer;
 

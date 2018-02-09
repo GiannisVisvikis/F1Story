@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements Communication{
             //+ "To show live ads, replace the ad unit ID in res/values/strings.xml with your own ad unit ID.";
 
 
-    public static final String BASIC_URI = "http://ergast.com/api/f1/";
+    public static final String BASIC_URI = "https://ergast.com/api/f1/";
     public static final String DATABASE_NAME = "F1_STORY.db";
     public static final String NEWS_TABLES_DATABASE = "NEWS_SITES.db";
     public static final String SHARED_PREFERENCES_TAG = "com_example_visvikis_f1storypreferences";

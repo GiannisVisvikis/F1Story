@@ -224,5 +224,6 @@
     <string name="api_not_responding">Ο server δεν αποκρινεται</string>
     <string name="later">Προσπαθηστε αργοτερα</string>
     <string name="checking_updates">Ελεγχος ενημερωσεων</string>
+    <string name="wait_for_season">Έλεγχος ετών συμμετοχής</string>
 
 </resources>

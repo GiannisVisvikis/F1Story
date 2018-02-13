@@ -223,5 +223,6 @@
     <string name="api_not_responding">Remote Api is not responding</string>
     <string name="later">Please try again later</string>
     <string name="checking_updates">Checking for updates</string>
+    <string name="wait_for_season">Seasons Loading</string>
 
 </resources>

@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.SpinnerAdapter;
+import android.widget.Toast;
 
 import comp.examplef1.iovisvikis.f1story.AsyncTasks.AdjustTask;
 import comp.examplef1.iovisvikis.f1story.Communication;
@@ -254,6 +255,10 @@ public class SelectionDialog extends android.support.v4.app.DialogFragment{
                     act.allowOrientationChanges();
 
                     SelectionDialog.this.dismiss();
+
+                }
+                else {
+                    Toast.makeText(getContext(), getResources().getString(R.string.wait_for_season), Toast.LENGTH_SHORT).show();
                 }
             }
         });

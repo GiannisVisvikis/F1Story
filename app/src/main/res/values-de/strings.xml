@@ -224,5 +224,6 @@
     <string name="api_not_responding">Apireagiert nicht</string>
     <string name="later">Versuchen Sie es später noch einmal</string>
     <string name="checking_updates">Aktualisierungen prüfen</string>
+    <string name="wait_for_season">Laden der Saison</string>
 
 </resources>

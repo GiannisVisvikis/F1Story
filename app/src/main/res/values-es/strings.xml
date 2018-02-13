@@ -223,6 +223,7 @@
     <string name="api_not_responding">API no responde</string>
     <string name="later">Intente nuevamente más tarde</string>
     <string name="checking_updates">Comprobando actualizaciones</string>
+    <string name="wait_for_season">Carga de temporada</string>
 
 
 </resources>

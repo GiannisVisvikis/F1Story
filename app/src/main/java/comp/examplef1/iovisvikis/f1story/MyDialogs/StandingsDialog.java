@@ -110,36 +110,44 @@ public class StandingsDialog extends android.support.v4.app.DialogFragment{
             @Override
             public void onClick(View view){
 
-                if(checkFirst.isChecked())
-                    firstSelected = true;
-                if(checkSecond.isChecked())
-                    secondSelected = true;
-                if(checkThird.isChecked())
-                    thirdSelected = true;
+                if(seasonSpinner != null && seasonSpinner.getSelectedItem()!= null){
+                    if(checkFirst.isChecked())
+                        firstSelected = true;
+                    if(checkSecond.isChecked())
+                        secondSelected = true;
+                    if(checkThird.isChecked())
+                        thirdSelected = true;
 
-                if(firstSelected || secondSelected || thirdSelected){
-                    Bundle args = new Bundle();
-                    args.putBoolean("FIRST_SELECTED", firstSelected);
-                    args.putBoolean("SECOND_SELECTED", secondSelected);
-                    args.putBoolean("THIRD_SELECTED", thirdSelected);
+                    if(firstSelected || secondSelected || thirdSelected){
+                        Bundle args = new Bundle();
+                        args.putBoolean("FIRST_SELECTED", firstSelected);
+                        args.putBoolean("SECOND_SELECTED", secondSelected);
+                        args.putBoolean("THIRD_SELECTED", thirdSelected);
 
-                    StandingsDialog.this.dismiss();
+                        StandingsDialog.this.dismiss();
 
-                    //start the task that downloads the data and sets the adapter
+                        //start the task that downloads the data and sets the adapter
 
-                    String season = seasonSpinner.getSelectedItem().toString();
-                    String[] splitQuery = query.split("/f1");
+                        String season = seasonSpinner.getSelectedItem().toString();
+                        String[] splitQuery = query.split("/f1");
 
-                    String finalQuery = splitQuery[0] + "/f1/" + season + splitQuery[1];
+                        String finalQuery = splitQuery[0] + "/f1/" + season + splitQuery[1];
 
-                    //Log.e("PODIUMS_QUERY", finalQuery + "");
+                        //Log.e("PODIUMS_QUERY", finalQuery + "");
 
-                    Object[] params = {finalQuery, "Results", act.getDownloadFragment(), getActivity().getResources().getString(R.string.getting_podiums), args};
-                    act.getDownloadFragment().startListAdapterTask(params);
+                        Object[] params = {finalQuery, "Results", act.getDownloadFragment(), getActivity().getResources().getString(R.string.getting_podiums), args};
+                        act.getDownloadFragment().startListAdapterTask(params);
+                    }
+                    else{
+                        Toast.makeText(getActivity(), getActivity().getResources().getString(R.string.podium_place), Toast.LENGTH_SHORT).show();
+                    }
+
                 }
-                else{
-                    Toast.makeText(getActivity(), getActivity().getResources().getString(R.string.podium_place), Toast.LENGTH_SHORT).show();
+                else {
+                    Toast.makeText(getActivity(),getActivity().getResources().getString(R.string.wait_for_season), Toast.LENGTH_SHORT).show();
                 }
+
+
             }
         });
 

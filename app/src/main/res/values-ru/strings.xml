@@ -224,6 +224,7 @@
     <string name="api_not_responding">API не отвечает</string>
     <string name="later">попробуй позже</string>
     <string name="checking_updates">проверять наличие обновлений</string>
+    <string name="wait_for_season">загрузка сезона</string>
 
 
 </resources>

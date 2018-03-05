@@ -16,6 +16,7 @@ import java.util.ArrayList;
  * Created by iovisvikis on 9/4/2017.
  */
 
+
 public class DriverPodiumAdapter extends SomeResultsAdapter{
 
 
@@ -35,6 +36,7 @@ public class DriverPodiumAdapter extends SomeResultsAdapter{
         return finalPlaces.size();
     }
 */
+
     public DriverPodiumAdapter(DownloadFragment host, JSONArray resultsArray, Bundle args){
 
         super(host, resultsArray);

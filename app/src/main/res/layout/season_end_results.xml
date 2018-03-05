@@ -23,6 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="4"
             android:hint="Season"
+            android:textSize="@dimen/letter_size"
             android:gravity="center"
             android:id="@+id/seasonTxt"/>
 f
@@ -30,6 +31,7 @@ f
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="4"
+            android:textSize="@dimen/letter_size"
             android:hint="Rounds"
             android:gravity="center"
             android:id="@+id/roundsTxt"/>

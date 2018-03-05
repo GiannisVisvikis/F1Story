@@ -36,6 +36,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:hint="Season\n2012"
+                android:textSize="@dimen/letter_size"
                 android:id="@id/seasonTxt"/>
 
             <android.support.v7.widget.AppCompatTextView
@@ -43,6 +44,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:hint="Rounds\n99"
+                android:textSize="@dimen/letter_size"
                 android:id="@+id/roundsTxt"/>
 
         </LinearLayout>
@@ -59,6 +61,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:hint="Wins\n99"
+                android:textSize="@dimen/letter_size"
                 android:id="@+id/winsTxt"/>
 
             <android.support.v7.widget.AppCompatTextView
@@ -66,6 +69,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:hint="Points\n99"
+                android:textSize="@dimen/letter_size"
                 android:id="@id/pointsTxt"/>
 
         </LinearLayout>

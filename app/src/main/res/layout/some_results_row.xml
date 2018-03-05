@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:weightSum="10"
+        android:weightSum="11"
         android:gravity="center">
 
         <FrameLayout
@@ -21,6 +21,10 @@
             android:background="@mipmap/info_results"
             android:id="@+id/infoButton"/>
 
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -35,6 +39,7 @@
                 android:layout_weight="3"
                 android:gravity="center"
                 android:hint="@string/race_name"
+                android:textSize="@dimen/letter_size"
                 android:id="@+id/raceNameTxt"/>
 
             <ImageView
@@ -47,6 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
                 android:gravity="center"
+                android:textSize="@dimen/letter_size"
                 android:hint="@string/locality"
                 android:id="@+id/localityTxt"/>
 
@@ -66,6 +72,7 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:hint="@string/grid"
+                android:textSize="@dimen/letter_size"
                 android:id="@+id/gridTxt"/>
 
             <android.support.v7.widget.AppCompatTextView
@@ -73,6 +80,7 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:hint="@string/position"
+                android:textSize="@dimen/letter_size"
                 android:id="@+id/positionTxt"/>
 
             <android.support.v7.widget.AppCompatTextView
@@ -80,6 +88,7 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:hint="@string/points"
+                android:textSize="@dimen/letter_size"
                 android:id="@+id/pointsTxt"/>
 
             <android.support.v7.widget.AppCompatTextView
@@ -87,6 +96,7 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:hint="@string/status"
+                android:textSize="@dimen/letter_size"
                 android:id="@+id/statusTxt"/>
 
         </LinearLayout>
@@ -103,6 +113,7 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:hint="@string/laps"
+                android:textSize="@dimen/letter_size"
                 android:id="@+id/lapsTxt"/>
 
             <android.support.v7.widget.AppCompatTextView
@@ -110,6 +121,7 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:hint="@string/fastest"
+                android:textSize="@dimen/letter_size"
                 android:id="@+id/fastestTxt"/>
 
             <android.support.v7.widget.AppCompatTextView
@@ -117,6 +129,7 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:hint="@string/speed"
+                android:textSize="@dimen/letter_size"
                 android:id="@+id/speedTxt"/>
 
             <android.support.v7.widget.AppCompatTextView
@@ -124,6 +137,7 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:hint="@string/time"
+                android:textSize="@dimen/letter_size"
                 android:id="@+id/timeTxt"/>
 
         </LinearLayout>

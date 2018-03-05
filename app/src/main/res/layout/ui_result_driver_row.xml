@@ -18,12 +18,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="10"
+            android:weightSum="13"
             android:gravity="center">
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="3"
                 android:layout_height="wrap_content"
+                android:src="@drawable/abate"
                 android:id="@id/driverPhoto"/>
 
             <LinearLayout
@@ -37,8 +39,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="@string/driver_name"
-                    android:layout_marginLeft="5dp"
                     android:textAlignment="center"
+                    android:textSize="@dimen/letter_size"
                     android:id="@+id/driverNameTxt"/>
 
                 <ImageView
@@ -50,8 +52,10 @@
 
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
                 android:layout_height="wrap_content"
+                android:src="@drawable/ferrari"
                 android:id="@id/constructorPhoto"/>
 
             <LinearLayout
@@ -67,6 +71,7 @@
                     android:hint="@string/constructor_name"
                     android:layout_marginLeft="5dp"
                     android:textAlignment="center"
+                    android:textSize="@dimen/letter_size"
                     android:id="@+id/constructorNameTxt"/>
 
                 <ImageView
@@ -98,6 +103,7 @@
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
                     android:hint="@string/position"
+                    android:textSize="@dimen/letter_size"
                     android:id="@+id/positionTxt"/>
 
                 <android.support.v7.widget.AppCompatTextView
@@ -105,6 +111,7 @@
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
                     android:hint="@string/grid"
+                    android:textSize="@dimen/letter_size"
                     android:id="@+id/gridTxt"/>
 
             </LinearLayout>
@@ -122,6 +129,7 @@
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
                     android:hint="@string/time"
+                    android:textSize="@dimen/letter_size"
                     android:id="@+id/timeTxt"/>
 
                 <android.support.v7.widget.AppCompatTextView
@@ -129,6 +137,7 @@
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
                     android:hint="@string/fastest"
+                    android:textSize="@dimen/letter_size"
                     android:id="@+id/fastestTxt"/>
 
             </LinearLayout>
@@ -146,6 +155,7 @@
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
                     android:hint="@string/points"
+                    android:textSize="@dimen/letter_size"
                     android:id="@+id/pointsTxt"/>
 
                 <android.support.v7.widget.AppCompatTextView
@@ -153,6 +163,7 @@
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
                     android:hint="@string/status"
+                    android:textSize="@dimen/letter_size"
                     android:id="@+id/statusTxt"/>
 
             </LinearLayout>

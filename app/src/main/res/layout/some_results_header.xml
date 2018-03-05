@@ -18,6 +18,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
+            android:src="@drawable/abate"
             android:id="@+id/driverImage"/>
 
         <LinearLayout
@@ -34,6 +35,7 @@
                 android:textColorHint="#FFFFFF"
                 android:textAlignment="center"
                 android:hint="@string/driver_name"
+                android:textSize="@dimen/letter_size"
                 android:id="@+id/driverNameTxt"/>
 
             <ImageView
@@ -48,6 +50,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
+            android:src="@drawable/ferrari"
             android:id="@+id/constructorImage"/>
 
         <LinearLayout
@@ -63,6 +66,7 @@
                 android:textColor="#FFFFFF"
                 android:textColorHint="#FFFFFF"
                 android:hint="@string/constructor_name"
+                android:textSize="@dimen/letter_size"
                 android:textAlignment="center"
                 android:id="@+id/constructorNameTxt"/>
 

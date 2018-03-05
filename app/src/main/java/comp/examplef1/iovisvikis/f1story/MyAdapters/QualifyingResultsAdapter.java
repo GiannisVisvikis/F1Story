@@ -70,7 +70,7 @@ public class QualifyingResultsAdapter extends RecyclerView.Adapter<QualifyingRes
                 View rowView = inflater.inflate(R.layout.qualifying_day, parent, false);
 
                 AppCompatTextView gridTxt = rowView.findViewById(R.id.gridTxt);
-                gridTxt.setText(host.getResources().getString(R.string.grid) + " " + qualifyingRow.getPosition());
+                gridTxt.setText(host.getResources().getString(R.string.grid) + "\n" + qualifyingRow.getPosition());
 
                 AppCompatTextView qsTxt = rowView.findViewById(R.id.qsTxt);
                 qsTxt.setText("Q1: " + qualifyingRow.getQ1() + "\tQ2: " + qualifyingRow.getQ2() + "\tQ3: " + qualifyingRow.getQ3());

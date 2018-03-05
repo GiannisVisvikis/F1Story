@@ -21,6 +21,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
+                android:src="@drawable/abate"
                 android:id="@+id/driverPhoto"/>
 
             <LinearLayout
@@ -35,6 +36,7 @@
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
                     android:hint="@string/driver_name"
+                    android:textSize="@dimen/letter_size"
                     android:id="@id/driverNameTxt"/>
 
                 <ImageView
@@ -49,6 +51,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
+                android:src="@drawable/ferrari"
                 android:id="@+id/constructorPhoto"/>
 
             <LinearLayout
@@ -62,6 +65,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
+                    android:textSize="@dimen/letter_size"
                     android:hint="@string/constructor_name"
                     android:id="@id/constructorNameTxt"/>
 
@@ -87,6 +91,7 @@
                 android:layout_weight="3"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textSize="@dimen/letter_size"
                 android:hint="Position 99"
                 android:id="@+id/positionTxt"/>
 
@@ -95,6 +100,7 @@
                 android:layout_weight="3"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textSize="@dimen/letter_size"
                 android:hint="Points 999"
                 android:id="@+id/pointsTxt"/>
 
@@ -103,6 +109,7 @@
                 android:layout_weight="3"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textSize="@dimen/letter_size"
                 android:hint="Wins 99"
                 android:id="@+id/winsTxt"/>
 

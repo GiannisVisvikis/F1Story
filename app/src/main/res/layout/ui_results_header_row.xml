@@ -27,6 +27,7 @@
             android:gravity="center"
             android:textColorHint="#FFFFFF"
             android:textColor="#FFFFFF"
+            android:textSize="@dimen/letter_size"
             android:id="@+id/seasonTxt"/>
 
         <android.support.v7.widget.AppCompatTextView
@@ -37,6 +38,7 @@
             android:hint="@string/race_name"
             android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF"
+            android:textSize="@dimen/letter_size"
             android:id="@+id/circuitNameTxt"/>
 
         <ImageView
@@ -52,6 +54,7 @@
             android:hint="@string/locality"
             android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF"
+            android:textSize="@dimen/letter_size"
             android:id="@+id/localityTxt"/>
 
         <FrameLayout

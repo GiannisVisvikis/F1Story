@@ -4,7 +4,7 @@
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
 
     <dimen name="drawer_width">320dp</dimen>
-
-    <dimen name="letter_size">11sp</dimen>
+    <dimen name="menu_size">18sp</dimen>
+    <dimen name="letter_size">20sp</dimen>
 
 </resources>

@@ -2,7 +2,7 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
 
     <dimen name="drawer_width">280dp</dimen>
-
-    <dimen name="letter_size">9sp</dimen>
+    <dimen name="menu_size">10sp</dimen>
+    <dimen name="letter_size">13sp</dimen>
 
 </resources>

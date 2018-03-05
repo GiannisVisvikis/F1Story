@@ -68,7 +68,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/drivers"
-                    android:textSize="@dimen/letter_size"/>
+                    android:textSize="@dimen/menu_size"/>
 
             </LinearLayout>
 
@@ -94,7 +94,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/circuits"
-                    android:textSize="@dimen/letter_size"/>
+                    android:textSize="@dimen/menu_size"/>
 
             </LinearLayout>
 
@@ -120,7 +120,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/champions"
-                    android:textSize="@dimen/letter_size"/>
+                    android:textSize="@dimen/menu_size"/>
 
             </LinearLayout>
 
@@ -147,7 +147,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/podiums"
-                    android:textSize="@dimen/letter_size"/>
+                    android:textSize="@dimen/menu_size"/>
 
             </LinearLayout>
 
@@ -174,7 +174,7 @@
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
                     android:text="@string/race_results"
-                    android:textSize="@dimen/letter_size"/>
+                    android:textSize="@dimen/menu_size"/>
 
             </LinearLayout>
 
@@ -201,7 +201,7 @@
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
                     android:text="@string/season_results"
-                    android:textSize="@dimen/letter_size"/>
+                    android:textSize="@dimen/menu_size"/>
 
             </LinearLayout>
 
@@ -227,7 +227,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/info"
-                    android:textSize="@dimen/letter_size"/>
+                    android:textSize="@dimen/menu_size"/>
 
             </LinearLayout>
 

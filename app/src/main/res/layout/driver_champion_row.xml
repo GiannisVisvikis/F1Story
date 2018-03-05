@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:elevation="20dp"
+    android:elevation="15dp"
     android:layout_margin="1.5dp">
 
     <LinearLayout
@@ -17,16 +17,26 @@
             android:orientation="horizontal"
             android:gravity="center">
 
-            <ImageView
+            <FrameLayout
                 android:layout_width="wrap_content"
-                android:layout_weight="2"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:src="@drawable/abate"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
                 android:id="@+id/driverPhoto"/>
 
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_weight="4"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center">
@@ -36,6 +46,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:textSize="@dimen/letter_size"
                     android:hint="Driver\nName"/>
 
                 <ImageView
@@ -45,14 +56,24 @@
 
             </LinearLayout>
 
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
             <android.support.v7.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="4                                                                                                       "
                 android:gravity="center"
                 android:layout_marginLeft="10dp"
                 android:hint="Championships 7"
+                android:textSize="@dimen/letter_size"
                 android:id="@+id/championshipsTxt"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
 
         </LinearLayout>
 

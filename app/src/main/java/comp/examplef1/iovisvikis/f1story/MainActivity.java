@@ -203,11 +203,11 @@ public class MainActivity extends AppCompatActivity implements Communication{
 
 
         //set the toolbar
-        theAppBar = (Toolbar) findViewById(R.id.the_toolbar);
+        theAppBar = findViewById(R.id.the_toolbar);
         setSupportActionBar(theAppBar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        theDrawerLayout = (DrawerLayout) findViewById(R.id.the_drawer_layout);
+        theDrawerLayout = findViewById(R.id.the_drawer_layout);
 
         //get the drawer fragment instance
         drawerFragment = (NavigationScrollViewFragment) getSupportFragmentManager().findFragmentById(R.id.drawerFragment);

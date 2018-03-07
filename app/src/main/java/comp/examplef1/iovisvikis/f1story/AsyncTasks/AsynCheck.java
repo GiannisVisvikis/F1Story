@@ -392,7 +392,7 @@ public class AsynCheck extends AsyncTask<Object, Object, UpdatesDialog>{
     protected void onPostExecute(UpdatesDialog dialog) {
         super.onPostExecute(dialog);
 
-        if (dialog.isVisible()) { //is null if database needs no update
+        if (dialog != null &&  dialog.isVisible()) { //is null if database needs no update
 
             dialog.dismiss();
 

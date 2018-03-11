@@ -1,6 +1,7 @@
 package comp.examplef1.iovisvikis.f1story;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.support.annotation.Nullable;
@@ -17,6 +18,7 @@ import android.view.ViewGroup;
 import comp.examplef1.iovisvikis.f1story.MyAdapters.NewsSitesAdapter;
 
 import comp.examplef1.iovisvikis.f1story.R;
+import comp.examplef1.iovisvikis.f1story.quiz.QuizActivity;
 
 
 /**
@@ -29,7 +31,7 @@ public class NavigationScrollViewFragment extends Fragment{
     private View drawerView;
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle mDrawerToggle;
-    private CardView driversCard, constructorsCard, circuitsCard, resultsCard, calendarCard, gridCard, newsCard;
+    private CardView quizCard, driversCard, constructorsCard, circuitsCard, resultsCard, calendarCard, gridCard, newsCard;
     private boolean wasDrawerOpen = true;
     private boolean userSeenDrawer = false;
 
@@ -71,6 +73,7 @@ public class NavigationScrollViewFragment extends Fragment{
 
         View root = inflater.inflate(R.layout.navigation_drawer_scrollview, container, false);
 
+        quizCard = root.findViewById(R.id.quiz_Card);
         driversCard = root.findViewById(R.id.driversCard);
         constructorsCard = root.findViewById(R.id.constructorsCard);
         circuitsCard = root.findViewById(R.id.circuitsCard);
@@ -86,6 +89,14 @@ public class NavigationScrollViewFragment extends Fragment{
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
+        quizCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent quizIntent = new Intent(getContext(), QuizActivity.class);
+                startActivity(quizIntent);
+            }
+        });
 
         driversCard.setOnClickListener(new View.OnClickListener() {
             @Override

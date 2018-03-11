@@ -459,20 +459,12 @@ public class MainActivity extends AppCompatActivity implements Communication{
                 getSoundFragment().playSound("sounds/downshifting.mp3");
                 return true;
 
-            case R.id.form_start:
-                getSoundFragment().playSound("sounds/form_grid_and_start.mp3");
-                return true;
-
             case R.id.multiple_pass:
                 getSoundFragment().playSound("sounds/multiple_pass.mp3");
                 return true;
 
             case R.id.v8_sound:
                 getSoundFragment().playSound("sounds/bmw_v8.mp3");
-                return true;
-
-            case R.id.v10_sound:
-                getSoundFragment().playSound("sounds/ferrari_v10.mp3");
                 return true;
 
             case R.id.v12_sound:

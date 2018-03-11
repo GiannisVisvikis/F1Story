@@ -89,17 +89,10 @@
                 app:showAsAction="never"
                 android:id="@+id/multiple_pass"/>
 
-            <item android:title="@string/form_grid_race_start"
-                app:showAsAction="never"
-                android:id="@+id/form_start"/>
 
             <item android:title="@string/v8_sound"
                 app:showAsAction="never"
                 android:id="@+id/v8_sound"/>
-
-            <item android:title="@string/v10_sound"
-                app:showAsAction="never"
-                android:id="@+id/v10_sound"/>
 
             <item android:title="@string/v12_sound"
                 app:showAsAction="never"

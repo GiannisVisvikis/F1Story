@@ -43,6 +43,7 @@
 
         <activity android:name="comp.examplef1.iovisvikis.f1story.NoConnectionActivity"/>
         <activity android:name="comp.examplef1.iovisvikis.f1story.NoResponseActivity"/>
+        <activity android:name="comp.examplef1.iovisvikis.f1story.quiz.QuizActivity"/>
 
         <!-- Include the AdActivity configChanges and theme. -->
         <activity

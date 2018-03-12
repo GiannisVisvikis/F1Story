@@ -102,10 +102,6 @@
                 app:showAsAction="never"
                 android:id="@+id/matraFord1969"/>
 
-            <item android:title="@string/ferrari312B"
-                app:showAsAction="never"
-                android:id="@+id/ferrari312"/>
-
         </menu>
 
     </item>

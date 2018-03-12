@@ -475,10 +475,6 @@ public class MainActivity extends AppCompatActivity implements Communication{
                 getSoundFragment().playSound("sounds/ford_matra_1969.mp3");
                 return true;
 
-            case R.id.ferrari312:
-                getSoundFragment().playSound("sounds/ferrari312b.mp3");
-                return true;
-
             default:
                 return false;
         }

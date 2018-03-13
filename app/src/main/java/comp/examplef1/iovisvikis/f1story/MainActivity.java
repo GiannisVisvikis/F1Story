@@ -65,7 +65,6 @@ public class MainActivity extends AppCompatActivity implements Communication{
     //private static final String TOAST_TEXT = "Test ads are being shown. "
             //+ "To show live ads, replace the ad unit ID in res/values/strings.xml with your own ad unit ID.";
 
-
     public static final String BASIC_URI = "https://ergast.com/api/f1/";
     public static final String DATABASE_NAME = "F1_STORY.db";
     public static final String NEWS_TABLES_DATABASE = "NEWS_SITES.db";
@@ -292,7 +291,7 @@ public class MainActivity extends AppCompatActivity implements Communication{
         ft.commit();
         fm.executePendingTransactions();
 
-        //TODO uncomment, replace app_id and banner_id strings and change version code in the app.build before release
+        //TODO uncomment, replace app_id interstitial and banner_id strings and change version code in the app.build before release
         //MobileAds.initialize(this, getResources().getString(R.string.addMob_app_id));
 
         // Load an ad into the AdMob banner view.

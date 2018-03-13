@@ -3,17 +3,25 @@ package comp.examplef1.iovisvikis.f1story.quiz;
 import android.app.Dialog;
 
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatTextView;
+import android.util.Base64;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 import comp.examplef1.iovisvikis.f1story.R;
 
@@ -46,10 +54,10 @@ public class QuizDialog extends DialogFragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-
         communication = (QuizCommunication) getActivity();
 
     }
+
 
     @Nullable
     @Override
@@ -74,6 +82,23 @@ public class QuizDialog extends DialogFragment {
             }
         });
 
+
+
+        AppCompatButton shareButton = view.findViewById(R.id.quiz_share);
+        shareButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String link = "https://play.google.com/store/apps/details?id=comp.examplef1.iovisvikis.f1story";
+
+                Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                shareIntent.setType("text/plain");
+                shareIntent.putExtra(Intent.EXTRA_TEXT, link);
+                startActivity(Intent.createChooser(shareIntent, "Share Link"));
+            }
+        });
+
+
         AppCompatButton restartButton = view.findViewById(R.id.quiz_restart);
         restartButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,6 +117,7 @@ public class QuizDialog extends DialogFragment {
 
         return view;
     }
+
 
 
 
@@ -115,7 +141,7 @@ public class QuizDialog extends DialogFragment {
         }
         else{
 
-            newWidth = 8 * (widthPixels/10);
+            newWidth = 9 * (widthPixels/10);
             newHeight =  heightPixels/2;
 
         }

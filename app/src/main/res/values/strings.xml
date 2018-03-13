@@ -220,16 +220,18 @@
     <string name="ferrari312B">Ferrari312B-3.0 V12</string>
     <string name="drawer_open">DRAWER_OPEN</string>
     <string name="drawer_closed">DRAWER_CLOSED</string>
-    <string name="api_not_responding">Remote Api is not responding</string>
-    <string name="later">Please try again later</string>
+    <string name="api_not_responding">Api not responding</string>
+    <string name="later">Try again later</string>
     <string name="checking_updates">Checking for updates</string>
-    <string name="wait_for_season">Seasons Loading</string>
+    <string name="wait_for_season">Loading seasons</string>
     <string name="more_info">More info</string>
     <string name="next_question">Next question</string>
-    <string name="restart_quiz">Restart</string>
+    <string name="restart_quiz">New</string>
     <string name="quit_quiz">Quit</string>
     <string name="correct">correct</string>
     <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
     <string name="quiz">Quiz</string>
+    <string name="share_quiz">Share</string>
+
 
 </resources>

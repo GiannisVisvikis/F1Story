@@ -224,13 +224,14 @@
     <string name="later">Intente nuevamente más tarde</string>
     <string name="checking_updates">Comprobando actualizaciones</string>
     <string name="wait_for_season">Carga de temporada</string>
-    <string name="more_info">More info</string>
-    <string name="next_question">Next question</string>
-    <string name="restart_quiz">Restart</string>
-    <string name="quit_quiz">Quit</string>
-    <string name="correct">correct</string>
+    <string name="more_info">Más info</string>
+    <string name="next_question">Siguiente</string>
+    <string name="restart_quiz">Nuevo</string>
+    <string name="quit_quiz">Dejar</string>
+    <string name="correct">Correcto</string>
     <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
     <string name="quiz">Quiz</string>
+    <string name="share_quiz">Enviar</string>
 
 
 </resources>
